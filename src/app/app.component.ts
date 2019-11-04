@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
-import { Platform } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
+import {Platform} from '@ionic/angular';
+import {SplashScreen} from '@ionic-native/splash-screen/ngx';
+import {StatusBar} from '@ionic-native/status-bar/ngx';
 
 @Component({
   selector: 'app-root',
@@ -12,14 +12,24 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent {
   public appPages = [
     {
-      title: 'Home',
+      title: 'Inicio',
       url: '/home',
       icon: 'home'
     },
     {
-      title: 'List',
+      title: 'Restautantes',
       url: '/list',
-      icon: 'list'
+      icon: 'restaurant'
+    },
+    {
+      title: 'Pedidos',
+      url: '/list',
+      icon: 'cart'
+    },
+    {
+      title: 'Perfil',
+      url: '/list',
+      icon: 'person'
     }
   ];
 

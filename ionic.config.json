@@ -1,5 +1,7 @@
 {
   "name": "senac_eats",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
