@@ -1,0 +1,24 @@
+ion-content {
+  --background: url('/assets/bg-login.jpg') no-repeat center center / cover;
+  --padding-top: 100px;
+  --padding-end: 10px;
+  --padding-start: 10px;
+}
+ion-item {
+  --ion-background-color: transparent !important;
+  --border-color: white;
+  --background-activated: black;
+  --background-focused: transparent !important;
+  --background-hover: transparent !important;
+  --highlight-color-invalid: red; // invalid underline color
+  --highlight-color-valid: green; // valid underline color
+  --padding-top: 10px;
+}
+ion-label {
+  --color: white;
+}
+.tituloLogin {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
