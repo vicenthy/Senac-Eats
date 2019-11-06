@@ -6,6 +6,40 @@
     <ion-title>
       Senac Eats
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content> </ion-content>
+<ion-content>
+  <div class="header-div">
+    <div class="header-text">
+      <h2>Categorias em destaques</h2>
+    </div>
+  </div>
+
+  <div class="slide-home">
+    <ion-slides class="slide-img" pager="true">
+      <ion-slide>
+        <ion-img src="assets/categorias/burger.jpg"></ion-img>
+        <p class="text-img-home">
+          Hamburguer
+        </p>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/categorias/churrasco.jpg"></ion-img>
+        <p class="text-img-home">Churrasco</p>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/categorias/massa.jpg"></ion-img>
+        <p class="text-img-home">Massas</p>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/categorias/sushi.jpg"></ion-img>
+        <p class="text-img-home">Sushi</p>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

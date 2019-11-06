@@ -6,7 +6,7 @@ import {Storage} from '@ionic/storage';
   selector: 'app-logout',
   templateUrl: 'logout.componet.html'
 })
-export class LogoutComponent implements OnInit {
+export class LogoutComponent {
   constructor(private route: Router, private storage: Storage) {}
 
   ionViewWillEnter() {
