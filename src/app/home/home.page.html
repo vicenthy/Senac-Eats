@@ -21,7 +21,7 @@
   </div>
 
   <div class="slide-home">
-    <ion-slides class="slide-img" pager="true">
+    <ion-slides class="slide-img" pager="true" [options]="slideOptions">
       <ion-slide>
         <ion-img src="assets/categorias/burger.jpg"></ion-img>
         <p class="text-img-home">
@@ -41,5 +41,49 @@
         <p class="text-img-home">Sushi</p>
       </ion-slide>
     </ion-slides>
+  </div>
+
+  <div class="home-content">
+    <ion-list>
+      <ion-list-header>
+        <h2>Restaurantes disponiveis</h2>
+      </ion-list-header>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-icon name="restaurant"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2>Titulo</h2>
+          <p>Descricao</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-icon name="restaurant"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2>Titulo</h2>
+          <p>Descricao</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-icon name="restaurant"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2>Titulo</h2>
+          <p>Descricao</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-icon name="restaurant"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2>Titulo</h2>
+          <p>Descricao</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
   </div>
 </ion-content>

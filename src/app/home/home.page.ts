@@ -10,6 +10,14 @@ import {Storage} from '@ionic/storage';
 export class HomePage implements OnInit {
   constructor(private route: Router, private storage: Storage) {}
 
+  slideOptions = {
+    autoplay: true,
+    speed: 1000,
+    zoom: {
+      maxRatio: 5
+    }
+  };
+
   ngOnInit(): void {
     this.storage.get('usuario').then(result => {
       if (!result) {
