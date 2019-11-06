@@ -22,14 +22,13 @@ export class AppComponent {
       icon: 'restaurant'
     },
     {
-      title: 'Pedidos',
-      url: '/list',
-      icon: 'cart'
-    },
-    {
       title: 'Perfil',
       url: '/list',
       icon: 'person'
+    },
+    {
+      title: 'Sair',
+      url: '/logout'
     }
   ];
 

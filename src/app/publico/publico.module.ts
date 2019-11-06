@@ -5,6 +5,7 @@ import {IonicModule} from '@ionic/angular';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {LoginComponent} from './login/login.component';
 import {CadastroComponent} from './cadastro/cadastro.component';
+import {LogoutComponent} from '../logout/logout.component';
 
 const routes: Routes = [
   {
