@@ -9,6 +9,7 @@ import {IonicStorageModule} from '@ionic/storage';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {LogoutComponent} from './logout/logout.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, LogoutComponent],
@@ -19,6 +20,7 @@ import {LogoutComponent} from './logout/logout.component';
       name: '_db_senac-eats',
       driverOrder: ['sqlite', 'localstorage']
     }),
+    HttpClientModule,
     IonicModule.forRoot(),
     AppRoutingModule
   ],
