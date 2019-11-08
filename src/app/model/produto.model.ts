@@ -1,7 +1,8 @@
 export class Produto {
-  id: number;
-  nome: string;
-  img: string;
-  valor: number;
-  total: number;
+  id: string;
+  imagePath: string;
+  name: string;
+  description: string;
+  price: number;
+  restaurantId: string;
 }
