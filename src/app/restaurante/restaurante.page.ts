@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {RestautanteService} from '../services/restautante.service';
 import {Produto} from '../model/produto.model';
 import {Restaurante} from '../model/restaurante.model';
@@ -15,6 +15,7 @@ export class RestaurantePage implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private restauranteService: RestautanteService
   ) {}
   ngOnInit() {
@@ -27,5 +28,9 @@ export class RestaurantePage implements OnInit {
           this.produtos = result[1];
         });
     });
+  }
+
+  abrirProduto(produto: Produto) {
+    this.router.navigate([`/produto/${produto.id}`]);
   }
 }

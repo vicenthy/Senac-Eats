@@ -22,7 +22,10 @@ const routes: Routes = [
     loadChildren: () =>
       import('./publico/publico.module').then(m => m.PublicoModule)
   },
-  {path: 'produto', loadChildren: './produto/produto.module#ProdutoPageModule'},
+  {
+    path: 'produto/:id',
+    loadChildren: './produto/produto.module#ProdutoPageModule'
+  },
   {
     path: 'restaurante/:id',
     loadChildren: './restaurante/restaurante.module#RestaurantePageModule'

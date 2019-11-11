@@ -22,7 +22,7 @@
 
 <ion-list-header>Produtos</ion-list-header>
 <ion-list>
-  <ion-item *ngFor="let produto of produtos">
+  <ion-item (click)="abrirProduto(produto)" *ngFor="let produto of produtos">
     <ion-thumbnail slot="end">
         <ion-img [src]="produto?.imagePath"></ion-img>
     </ion-thumbnail>
