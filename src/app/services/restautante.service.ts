@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {ApiService} from '../api.service';
 import {Restaurante} from '../model/restaurante.model';
-import {Observable} from 'rxjs';
+import {Observable, forkJoin} from 'rxjs';
 import {map} from 'rxjs/operators';
 import {Produto} from '../model/produto.model';
 
@@ -27,5 +27,11 @@ export class RestautanteService {
     return this.api
       .get(`/restaurants/${id}/menu`)
       .pipe(map((data: Produto[]) => data));
+  }
+
+  getRestauranteAndMenu(id) {
+    let restautante = this.getById(id);
+    let menu = this.getMenu(id);
+    return forkJoin(restautante, menu);
   }
 }
