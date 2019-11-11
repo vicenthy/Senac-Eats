@@ -12,6 +12,7 @@ import {Restaurante} from '../model/restaurante.model';
 export class RestaurantePage implements OnInit {
   produtos: Produto[];
   restaurante: Restaurante;
+
   constructor(
     private route: ActivatedRoute,
     private restauranteService: RestautanteService
@@ -24,8 +25,6 @@ export class RestaurantePage implements OnInit {
         .subscribe(result => {
           this.restaurante = result[0];
           this.produtos = result[1];
-          console.log(this.restaurante);
-          console.log(this.produtos);
         });
     });
   }

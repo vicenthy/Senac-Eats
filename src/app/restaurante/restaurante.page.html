@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>restaurante</ion-title>
+    <ion-title>{{ restaurante?.name}}</ion-title>
     <ion-buttons slot="end">
         <ion-button [routerLink]="['/pedido']">
         <ion-icon name="cart"></ion-icon>
@@ -11,7 +11,26 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
+<ion-card>
+  <ion-img [src]="restaurante?.imagePath"></ion-img>
+  <ion-card-header>
+    <ion-card-title>{{restaurante?.name}}</ion-card-title>
+    <ion-card-subtitle>{{restaurante?.about}}</ion-card-subtitle>
+  </ion-card-header>
+</ion-card>
 
+<ion-list-header>Produtos</ion-list-header>
+<ion-list>
+  <ion-item *ngFor="let produto of produtos">
+    <ion-thumbnail slot="end">
+        <ion-img [src]="produto?.imagePath"></ion-img>
+    </ion-thumbnail>
+    <ion-label>
+      {{produto?.name}}
+      <p>{{produto?.description}}</p>
+      <h2> {{produto?.price | currency: 'BRL':true }}</h2>
+    </ion-label>
+ </ion-item>
+</ion-list>
 </ion-content>
