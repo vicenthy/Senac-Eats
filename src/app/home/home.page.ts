@@ -37,6 +37,6 @@ export class HomePage implements OnInit {
   }
 
   abrirRestaurante(restaurante: Restaurante) {
-    this.route.navigate(['']);
+    this.route.navigate([`/restaurante/${restaurante.id}`]);
   }
 }
