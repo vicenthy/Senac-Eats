@@ -30,8 +30,8 @@ export class RestautanteService {
   }
 
   getRestauranteAndMenu(id) {
-    let restautante = this.getById(id);
+    let restaurante = this.getById(id);
     let menu = this.getMenu(id);
-    return forkJoin(restautante, menu);
+    return forkJoin(restaurante, menu);
   }
 }
