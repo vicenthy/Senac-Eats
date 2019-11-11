@@ -48,7 +48,10 @@
       <ion-list-header>
         <h2>Restaurantes disponiveis</h2>
       </ion-list-header>
-      <ion-item *ngFor="let restaurante of restaurantes">
+      <ion-item
+        (click)="abrirRestaurante(restaurante)"
+        *ngFor="let restaurante of restaurantes"
+      >
         <ion-avatar slot="start">
           <ion-img [src]="restaurante.imagePath"></ion-img>
         </ion-avatar>
